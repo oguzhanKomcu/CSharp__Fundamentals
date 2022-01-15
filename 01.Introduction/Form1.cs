@@ -50,7 +50,7 @@
             double km = 1.609344 * mile;
             double lr = 3.78541178 * gallon ;
 
-            MessageBox.Show($"KILOMETER : {Math.Round(km)}km\nLITER: {Math.Round(lr)}l");
+            MessageBox.Show($"Kilometer : {Math.Round(km)}km\nLITER: {Math.Round(lr)}l");
 
         }
 

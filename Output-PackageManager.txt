@@ -1,0 +1,6 @@
+﻿Restored C:\Users\LB 00101\Desktop\Github Files\CSharp__Fundamentals\02_iF_ELse\02_iF_ELse.csproj (in 121 ms).
+Restored C:\Users\LB 00101\Desktop\Github Files\CSharp__Fundamentals\01.Introduction\01.Introduction.csproj (in 121 ms).
+Time Elapsed: 00:00:00.8994432
+========== Finished ==========
+
+
