@@ -15,3 +15,6 @@ You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/CSharp__F
 ## FOR LOOP
 One of the most basic building blocks of programming is loops. It allows us to write less and more functional coding that will be written over and over.Loops are used in programming to repeatedly execute a certain block of statements until some condition is met.The for loop is also a type of loop that we use most in loops.
 You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/CSharp__Fundamentals/blob/master/04_FoR_CYCLE/Form1.cs)
+## FOREACH LOOP
+Foreach is a loop that goes through the elements of array and collection-based objects, you can iterate through these elements and create your business layer. You can see my work on this loop type.
+You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/CSharp__Fundamentals/blob/master/ForeacH_Examples/Form1.cs)
