@@ -11,3 +11,7 @@ You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/CSharp__F
 ## SWİTCH-CASE
 In multi-state branching statements, switch-case structure is preferably used instead of if-else blocks. It is used when equality is desired.The value to be checked is placed in the case blocks. It is closed with a break.
 You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/CSharp__Fundamentals/blob/master/03_SwiTch_CaSe/Form1.cs).
+
+## FOR LOOP
+One of the most basic building blocks of programming is loops. It allows us to write less and more functional coding that will be written over and over.Loops are used in programming to repeatedly execute a certain block of statements until some condition is met.The for loop is also a type of loop that we use most in loops.
+You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/CSharp__Fundamentals/blob/master/04_FoR_CYCLE/Form1.cs)
