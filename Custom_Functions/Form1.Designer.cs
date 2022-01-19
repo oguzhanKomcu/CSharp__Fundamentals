@@ -35,7 +35,6 @@
             this.btnExample1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.textNumber1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -45,7 +44,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textHeight = new System.Windows.Forms.TextBox();
-            this.btnnetexample = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -114,15 +112,7 @@
             this.textNumber1.Name = "textNumber1";
             this.textNumber1.Size = new System.Drawing.Size(95, 23);
             this.textNumber1.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(551, 41);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 15);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "label3";
+            this.textNumber1.Text = "( , )";
             // 
             // label4
             // 
@@ -177,6 +167,7 @@
             this.textWeight.Name = "textWeight";
             this.textWeight.Size = new System.Drawing.Size(100, 23);
             this.textWeight.TabIndex = 0;
+            this.textWeight.Text = "( , )";
             // 
             // label7
             // 
@@ -190,20 +181,21 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(51, 74);
+            this.label6.Location = new System.Drawing.Point(27, 79);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 15);
+            this.label6.Size = new System.Drawing.Size(80, 15);
             this.label6.TabIndex = 4;
-            this.label6.Text = "WEIGHT :";
+            this.label6.Text = "WEIGHT (kg) :";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(51, 40);
+            this.label5.Location = new System.Drawing.Point(28, 40);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 15);
+            this.label5.Size = new System.Drawing.Size(79, 15);
             this.label5.TabIndex = 4;
-            this.label5.Text = "HEIGHT  :";
+            this.label5.Text = "HEIGHT (m)  :";
             // 
             // textHeight
             // 
@@ -211,24 +203,13 @@
             this.textHeight.Name = "textHeight";
             this.textHeight.Size = new System.Drawing.Size(100, 23);
             this.textHeight.TabIndex = 0;
-            // 
-            // btnnetexample
-            // 
-            this.btnnetexample.Location = new System.Drawing.Point(437, 156);
-            this.btnnetexample.Name = "btnnetexample";
-            this.btnnetexample.Size = new System.Drawing.Size(75, 23);
-            this.btnnetexample.TabIndex = 7;
-            this.btnnetexample.Text = "button1";
-            this.btnnetexample.UseVisualStyleBackColor = true;
-            this.btnnetexample.Click += new System.EventHandler(this.btnnetexample_Click);
+            this.textHeight.Text = "( , )";
             // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(662, 503);
-            this.Controls.Add(this.btnnetexample);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.groupBox1.ResumeLayout(false);
@@ -238,7 +219,6 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -251,7 +231,6 @@
         private Button btnExample1;
         private Label label2;
         private TextBox textNumber1;
-        private Label label3;
         private Label label4;
         private GroupBox groupBox2;
         private GroupBox groupBox3;
@@ -261,6 +240,5 @@
         private Label label6;
         private Label label5;
         private TextBox textHeight;
-        private Button btnnetexample;
     }
 }
