@@ -33,7 +33,7 @@ namespace _04_FoR_CYCLE
             //Let's print the teams in the nba western conference.
             string[] nba_teams = {"Denver Nuggets", "Minnesota Timberwolves", "Oklahoma City Thunder", "Portland Trail Blazers", 
                                          "Utah Jazz", "Dallas Mavericks" , "Houston Rockets","Memphis Grizzlies","New Orleans Hornets","San Antonio Spurs",
-                                     "Golden STATE Warriors","Los Angeles Clippers","Los Angeles Lakers","Phoneix Suns","Sacramento Kings"};
+                                     "Golden State Warriors","Los Angeles Clippers","Los Angeles Lakers","Phoneix Suns","Sacramento Kings"};
 
             for (int i = 0; i < nba_teams.Length; i++)
             {
