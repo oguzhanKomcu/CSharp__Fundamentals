@@ -110,7 +110,8 @@ namespace Custom_Functions
             return message; 
 
         }
-
+        
+        //let's check the working of our function
         private void btnBmi_Click(object sender, EventArgs e)
         {
             MessageBox.Show($"{Bodymassindex(double.Parse(textHeight.Text), double.Parse(textWeight.Text))}");
