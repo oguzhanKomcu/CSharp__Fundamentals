@@ -63,7 +63,8 @@ namespace ForeacH_Examples
         {
             //Let's sort the teams in the nba east conference Z-A and print them in the listbox.//
 
-            string[] NbaEasternConference = {"Chicago Bulls", "Miami Heat", "Brooklyn Heat", "Cleveland Cavaliers","Milwaukee Bucks", "Philadelphia 76ers","Charlotte Hornets",
+            string[] NbaEasternConference = {"Chicago Bulls", "Miami Heat", "Brooklyn Heat", "Cleveland Cavaliers","Milwaukee Bucks", 
+                                                                 "Philadelphia 76ers","Charlotte Hornets",
                                                "Washington Wizards","Toronto Raaptors","Boston Celtics","New York Knicks","Atalanta Hawks",
                                                          "Indiana Pacers","Detroit Pistons","Orlando Magic"};
 

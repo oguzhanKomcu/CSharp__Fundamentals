@@ -12,17 +12,18 @@ namespace _04_FoR_CYCLE
 
             //Let's find the factorial of the entered number.
 
-            int carpim = 1;
+            int multiply = 1;
             int sayi1 = Convert.ToInt32(textSayi1.Text);
 
             for (int i = 1; i <= sayi1; i++)
             {
-                carpim = i * carpim;
-                if (i == sayi1)
-                    MessageBox.Show($"Conclusion :{sayi1}! = {carpim}");
+                multiply = i * multiply;
+               
+                
 
             }
 
+            MessageBox.Show($"Conclusion :{sayi1}! = {multiply}");
 
         }
 

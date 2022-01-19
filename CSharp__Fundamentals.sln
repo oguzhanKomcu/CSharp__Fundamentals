@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_SwiTch_CaSe", "03_SwiTch
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_FoR_CYCLE", "04_FoR_CYCLE\04_FoR_CYCLE.csproj", "{09F8E657-D4EB-405B-AFDD-68BEAEFD74AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForeacH_Examples", "ForeacH_Examples\ForeacH_Examples.csproj", "{2301E7FF-7AC6-4F93-AF9C-B03F0607DD38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForeacH_Examples", "ForeacH_Examples\ForeacH_Examples.csproj", "{2301E7FF-7AC6-4F93-AF9C-B03F0607DD38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Custom_Functions", "Custom_Functions\Custom_Functions.csproj", "{1EB4DCC6-A4EF-4EB3-93A1-ED51A9306FB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{2301E7FF-7AC6-4F93-AF9C-B03F0607DD38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2301E7FF-7AC6-4F93-AF9C-B03F0607DD38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2301E7FF-7AC6-4F93-AF9C-B03F0607DD38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EB4DCC6-A4EF-4EB3-93A1-ED51A9306FB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EB4DCC6-A4EF-4EB3-93A1-ED51A9306FB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EB4DCC6-A4EF-4EB3-93A1-ED51A9306FB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EB4DCC6-A4EF-4EB3-93A1-ED51A9306FB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
