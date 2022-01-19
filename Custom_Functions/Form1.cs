@@ -104,7 +104,7 @@ namespace Custom_Functions
             }
             else
             {
-                message = ("You entered an incorrect number");
+                message = ("You entered an incorrect numbeR");
             }
 
             return message; 
