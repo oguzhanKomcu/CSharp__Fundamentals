@@ -29,7 +29,7 @@ namespace Custom_Functions
         }
 
 
-
+        //let's check the working of our function
         private void btnFactorialFunction_Click(object sender, EventArgs e)
         {
             MessageBox.Show($"Factorial = {(Factorial(int.Parse(textFactorialNumber.Text)))} ");
@@ -52,10 +52,14 @@ namespace Custom_Functions
 
         }
 
+        //let's check the working of our function
         private void btnExample1_Click(object sender, EventArgs e)
         {    
             MessageBox.Show($"Km = {(MileKm(double.Parse(textNumber1.Text)))}");
         }
+
+
+        //Let's make the function that calculates the body mass index.
         /// <summary>
         /// This function calculates the body mass index according to the given height and weight value.
         /// </summary>
@@ -112,5 +116,7 @@ namespace Custom_Functions
             MessageBox.Show($"{Bodymassindex(double.Parse(textHeight.Text), double.Parse(textWeight.Text))}");
 
         }
+
+
     }
 }

@@ -39,12 +39,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textHeight = new System.Windows.Forms.TextBox();
-            this.textWeight = new System.Windows.Forms.TextBox();
             this.btnBmi = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.textWeight = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textHeight = new System.Windows.Forms.TextBox();
+            this.btnnetexample = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -160,20 +161,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Body Mass Index Function";
             // 
-            // textHeight
-            // 
-            this.textHeight.Location = new System.Drawing.Point(122, 37);
-            this.textHeight.Name = "textHeight";
-            this.textHeight.Size = new System.Drawing.Size(100, 23);
-            this.textHeight.TabIndex = 0;
-            // 
-            // textWeight
-            // 
-            this.textWeight.Location = new System.Drawing.Point(122, 71);
-            this.textWeight.Name = "textWeight";
-            this.textWeight.Size = new System.Drawing.Size(100, 23);
-            this.textWeight.TabIndex = 0;
-            // 
             // btnBmi
             // 
             this.btnBmi.Location = new System.Drawing.Point(123, 109);
@@ -184,23 +171,12 @@
             this.btnBmi.UseVisualStyleBackColor = true;
             this.btnBmi.Click += new System.EventHandler(this.btnBmi_Click);
             // 
-            // label5
+            // textWeight
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(51, 40);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 15);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "HEIGHT  :";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(51, 74);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 15);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "WEIGHT :";
+            this.textWeight.Location = new System.Drawing.Point(122, 71);
+            this.textWeight.Name = "textWeight";
+            this.textWeight.Size = new System.Drawing.Size(100, 23);
+            this.textWeight.TabIndex = 0;
             // 
             // label7
             // 
@@ -211,9 +187,45 @@
             this.label7.TabIndex = 4;
             this.label7.Text = "Body Mass Index :";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(51, 74);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(56, 15);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "WEIGHT :";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(51, 40);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 15);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "HEIGHT  :";
+            // 
+            // textHeight
+            // 
+            this.textHeight.Location = new System.Drawing.Point(122, 37);
+            this.textHeight.Name = "textHeight";
+            this.textHeight.Size = new System.Drawing.Size(100, 23);
+            this.textHeight.TabIndex = 0;
+            // 
+            // btnnetexample
+            // 
+            this.btnnetexample.Location = new System.Drawing.Point(437, 156);
+            this.btnnetexample.Name = "btnnetexample";
+            this.btnnetexample.Size = new System.Drawing.Size(75, 23);
+            this.btnnetexample.TabIndex = 7;
+            this.btnnetexample.Text = "button1";
+            this.btnnetexample.UseVisualStyleBackColor = true;
+            this.btnnetexample.Click += new System.EventHandler(this.btnnetexample_Click);
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(662, 503);
+            this.Controls.Add(this.btnnetexample);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label3);
@@ -249,5 +261,6 @@
         private Label label6;
         private Label label5;
         private TextBox textHeight;
+        private Button btnnetexample;
     }
 }
