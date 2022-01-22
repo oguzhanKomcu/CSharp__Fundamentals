@@ -37,31 +37,7 @@ namespace Custom_Functions
         }
 
 
-        bool Passwordnumberquery(string password)
-        {
-            int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
 
-            char[] numbers1 = password.ToCharArray(); 
-
-            bool resault = false;
-
-            for (int i = 0; i < numbers.Length; i++)
-            {
-
-
-                for (int j = 0; j < password.Length; j++)
-                {
-                    if (numbers1[j] == numbers[i])
-                    {
-                        resault = true;
-                    }
-                }
-
-            }
-
-            return resault;
-
-        }
 
         bool SignUp(string userId, string password)
         {
@@ -69,7 +45,7 @@ namespace Custom_Functions
             if (userId != "" && userId.Length == 11 )
             {
              
-                if (password != "" && password.Length > 5 && Passwordnumberquery(password) == true)
+                if (password != "" && password.Length > 5 )
                 {
                     users.Add(userId, password);
                     return true;
@@ -88,24 +64,26 @@ namespace Custom_Functions
             }
 
         }
-        double Balance()
+       bool Balance()
         {
+       
             double depositmoney1 = Convert.ToDouble(textTransactions.Text);
+          
             double balance = 0;
 
 
-            double totalbalance = depositmoney1 + balance;
-            usebalance.Add(totalbalance);
-            return totalbalance;
+            double totalbalance = depositmoney1 + usebalance[0];
+            usebalance[0] = totalbalance;
+            return true;
 
         }
-        double NewBalance()
+       bool NewBalance()
         {
             double depositmoney1 = Convert.ToDouble(textTransactions.Text);
 
             double totalbalance = usebalance[0] - depositmoney1;
-           
-            return totalbalance;
+            usebalance[0] = totalbalance;
+            return true;
 
         }
 
@@ -191,10 +169,11 @@ namespace Custom_Functions
             
             if (Convert.ToDouble(textTransactions.Text) < usebalance[0])
             {
-                
-                MessageBox.Show($"Your withdrawal has been successfully completed.\nTotal Balance = {NewBalance()}");
-                labelBalance.Text = ""; 
-                labelBalance.Text = NewBalance().ToString()+" TL";
+                NewBalance();
+                MessageBox.Show($"Your withdrawal has been successfully completed.\nTotal Balance = {usebalance[0]}");
+                labelBalance.Text = "";
+               
+                labelBalance.Text = usebalance[0].ToString()+" TL";
                 textTransactions.Clear();
             }
             
@@ -204,8 +183,9 @@ namespace Custom_Functions
 
         private void btnDeposit_Click(object sender, EventArgs e)
         {
-      
-                labelBalance.Text = Balance().ToString();
+            usebalance.Add(0);
+            Balance();
+                labelBalance.Text = usebalance[0].ToString()+" TL";
                 MessageBox.Show("Your transaction has been completed successfully.");
                 textTransactions.Clear();
 
