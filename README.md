@@ -21,3 +21,5 @@ You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/CSharp__F
 ## CUSTOM FUNCTİONS
 Using functions in C# allows you to repeatedly run the code block you have created anywhere in the program. The function you created can be used both in the project and out of the project, one or more times, privately or openly. In this way, we will not repeat the same codes by using a function, and we will alleviate our work by correcting it in one place when it needs to be corrected. You can look at the sample special function I made.
 You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/CSharp__Fundamentals/blob/master/Custom_Functions/Form1.cs)
+My sample atm project[GitHub Pages](https://github.com/oguzhanKomcu/CSharp__Fundamentals/blob/master/Custom_Functions/AtmApp2.cs)
+My sample dice game project[GitHub Pages](https://github.com/oguzhanKomcu/CSharp__Fundamentals/blob/master/Custom_Functions/DiceGame.cs)
