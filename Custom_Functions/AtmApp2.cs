@@ -57,9 +57,6 @@ namespace Custom_Functions
                     }
                 }
 
-                
-
-
             }
 
             return resault;
@@ -72,7 +69,7 @@ namespace Custom_Functions
             if (userId != "" && userId.Length == 11 )
             {
              
-                if (password != "" && password.Length! > 5 && Passwordnumberquery(password) == true)
+                if (password != "" && password.Length > 5 && Passwordnumberquery(password) == true)
                 {
                     users.Add(userId, password);
                     return true;
