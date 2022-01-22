@@ -186,7 +186,7 @@
             this.label6.Size = new System.Drawing.Size(80, 15);
             this.label6.TabIndex = 4;
             this.label6.Text = "WEIGHT (kg) :";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+
             // 
             // label5
             // 
