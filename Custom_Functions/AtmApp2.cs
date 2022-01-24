@@ -183,7 +183,6 @@ namespace Custom_Functions
 
         private void btnDeposit_Click(object sender, EventArgs e)
         {
-            usebalance.Add(0);
             Balance();
                 labelBalance.Text = usebalance[0].ToString()+" TL";
                 MessageBox.Show("Your transaction has been completed successfully.");
