@@ -292,7 +292,7 @@ namespace Custom_Functions
                 REPORT.Items.Add(user1);
 
             }
-            REPORT.Items.Add($"TOTAL GAINS : {totalprice[0]}");
+            REPORT.Items.Add($"TOTAL GAINS : {totalprice[0]} TL ");
 
 
         }
