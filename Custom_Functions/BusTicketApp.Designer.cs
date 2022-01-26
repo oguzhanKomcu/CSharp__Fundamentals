@@ -207,7 +207,7 @@
             this.groupBoxSeatBumber.Size = new System.Drawing.Size(253, 446);
             this.groupBoxSeatBumber.TabIndex = 6;
             this.groupBoxSeatBumber.TabStop = false;
-            this.groupBoxSeatBumber.Text = "Otobüs Koltuk Durumu";
+            this.groupBoxSeatBumber.Text = "Seats İn The Bus";
             // 
             // btn2
             // 
@@ -485,16 +485,17 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.LimeGreen;
-            this.label5.Location = new System.Drawing.Point(432, 494);
+            this.label5.Location = new System.Drawing.Point(427, 494);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 15);
             this.label5.TabIndex = 9;
             this.label5.Text = "           ";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(432, 522);
+            this.label6.Location = new System.Drawing.Point(426, 522);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 15);
             this.label6.TabIndex = 10;
