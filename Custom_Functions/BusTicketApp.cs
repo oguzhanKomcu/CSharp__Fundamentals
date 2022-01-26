@@ -154,55 +154,14 @@ namespace Custom_Functions
 
         }
 
-   
 
-
-        List<string> users = new List<string>();
-        List<int> totalprice = new List<int>(); 
-        private void btnBuyAticket_Click(object sender, EventArgs e)
+        //Here, after choosing the first chief seat number, I changed the seat color from white to red after the ticket was purchased.
+        bool seatstate(int seatnumber)
         {
-
-
-            string firstname = textFirstName.Text;
-            string lastname = textLastName.Text;    
-            string ıd = textId.Text;
-            int seatnumber = Convert.ToInt32(textseatnumber.Text);
-
-            string fullname = firstname +" "+ lastname + "   " + ıd + "    " + textseatnumber.Text;
-
-            for (int i = 0; i < 1; i++)
-            { 
-               
-                users.Add(fullname);
-                totalprice.Add(i);
-                int total = 185 + totalprice[0];
-                totalprice[0] = total;
-
-            }
- 
-
-            //Ticket.
-
-
-            MessageBox.Show(
-            $"Full Name : {fullname}\nID : {ıd}" +
-            $"\nSelected Seat: {textseatnumber.Text}" +
-            $"\nTicket Price: 185 TL" +
-            $"\nSelected Seat: {textseatnumber.Text}" +
-            $"\nTicket Price : 185 TL" +
-            $"\nBus Departure Time : 09:00   Bus Platform : 15" +
-            $"\nWe wish you a pleasant journey.." +
-            $"\nTHEREC TRUZİM "
-            );
-
-
-
-            //Here, after choosing the first chief seat number, I changed the seat color from white to red after the ticket was purchased.
-
             switch (seatnumber)
             {
-                case 1 : 
-                    btn1.BackColor= Color.Red;
+                case 1:
+                    btn1.BackColor = Color.Red;
                     break;
                 case 2:
                     btn2.BackColor = Color.Red;
@@ -267,7 +226,55 @@ namespace Custom_Functions
                 default:
                     break;
             }
+            return true;
 
+        }
+
+
+
+        List<string> users = new List<string>();
+        List<int> totalprice = new List<int>(); 
+        private void btnBuyAticket_Click(object sender, EventArgs e)
+        {
+
+
+            string firstname = textFirstName.Text;
+            string lastname = textLastName.Text;    
+            string ıd = textId.Text;
+            int seatnumber = Convert.ToInt32(textseatnumber.Text);
+
+            string fullname = firstname +" "+ lastname + "   " + ıd + "    " + textseatnumber.Text;
+
+            for (int i = 0; i < 1; i++)
+            { 
+               
+                users.Add(fullname);
+                totalprice.Add(i);
+                int total = 185 + totalprice[0];
+                totalprice[0] = total;
+
+            }
+ 
+
+            //Ticket.
+
+
+            MessageBox.Show(
+            $"Full Name : {fullname}\nID : {ıd}" +
+            $"\nSelected Seat: {textseatnumber.Text}" +
+            $"\nTicket Price: 185 TL" +
+            $"\nSelected Seat: {textseatnumber.Text}" +
+            $"\nTicket Price : 185 TL" +
+            $"\nBus Departure Time : 09:00   Bus Platform : 15" +
+            $"\nWe wish you a pleasant journey.." +
+            $"\nTHEREC TRUZİM "
+            );
+
+            //Here, after choosing the first chief seat number, I changed the seat color from white to red after the ticket was purchased.
+            seatstate(seatnumber);
+            
+
+            
 
             //I deleted all the textboxes after the process was finished.
 
