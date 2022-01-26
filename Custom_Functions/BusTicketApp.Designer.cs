@@ -40,7 +40,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.groupBoxBusTicket = new System.Windows.Forms.GroupBox();
             this.btnBuyAticket = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBoxSeatBumber = new System.Windows.Forms.GroupBox();
+            this.btn2 = new System.Windows.Forms.Button();
             this.btn1 = new System.Windows.Forms.Button();
             this.btn12 = new System.Windows.Forms.Button();
             this.button33 = new System.Windows.Forms.Button();
@@ -61,13 +62,12 @@
             this.btn6 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
             this.btn5 = new System.Windows.Forms.Button();
-            this.btn2 = new System.Windows.Forms.Button();
             this.btn4 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnGetReport = new System.Windows.Forms.Button();
             this.REPORT = new System.Windows.Forms.ListBox();
             this.groupBoxBusTicket.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.groupBoxSeatBumber.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -172,36 +172,47 @@
             this.btnBuyAticket.UseVisualStyleBackColor = true;
             this.btnBuyAticket.Click += new System.EventHandler(this.btnBuyAticket_Click);
             // 
-            // groupBox2
+            // groupBoxSeatBumber
             // 
-            this.groupBox2.Controls.Add(this.btn1);
-            this.groupBox2.Controls.Add(this.btn12);
-            this.groupBox2.Controls.Add(this.button33);
-            this.groupBox2.Controls.Add(this.btn21);
-            this.groupBox2.Controls.Add(this.btn20);
-            this.groupBox2.Controls.Add(this.btn19);
-            this.groupBox2.Controls.Add(this.btn18);
-            this.groupBox2.Controls.Add(this.btn17);
-            this.groupBox2.Controls.Add(this.btn16);
-            this.groupBox2.Controls.Add(this.btn15);
-            this.groupBox2.Controls.Add(this.btn14);
-            this.groupBox2.Controls.Add(this.btn13);
-            this.groupBox2.Controls.Add(this.btn11);
-            this.groupBox2.Controls.Add(this.btn10);
-            this.groupBox2.Controls.Add(this.btn9);
-            this.groupBox2.Controls.Add(this.btn8);
-            this.groupBox2.Controls.Add(this.btn7);
-            this.groupBox2.Controls.Add(this.btn6);
-            this.groupBox2.Controls.Add(this.btn3);
-            this.groupBox2.Controls.Add(this.btn5);
-            this.groupBox2.Controls.Add(this.btn2);
-            this.groupBox2.Controls.Add(this.btn4);
-            this.groupBox2.Location = new System.Drawing.Point(427, 33);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(253, 446);
-            this.groupBox2.TabIndex = 6;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Otobüs Koltuk Durumu";
+            this.groupBoxSeatBumber.Controls.Add(this.btn2);
+            this.groupBoxSeatBumber.Controls.Add(this.btn1);
+            this.groupBoxSeatBumber.Controls.Add(this.btn12);
+            this.groupBoxSeatBumber.Controls.Add(this.button33);
+            this.groupBoxSeatBumber.Controls.Add(this.btn21);
+            this.groupBoxSeatBumber.Controls.Add(this.btn20);
+            this.groupBoxSeatBumber.Controls.Add(this.btn19);
+            this.groupBoxSeatBumber.Controls.Add(this.btn18);
+            this.groupBoxSeatBumber.Controls.Add(this.btn17);
+            this.groupBoxSeatBumber.Controls.Add(this.btn16);
+            this.groupBoxSeatBumber.Controls.Add(this.btn15);
+            this.groupBoxSeatBumber.Controls.Add(this.btn14);
+            this.groupBoxSeatBumber.Controls.Add(this.btn13);
+            this.groupBoxSeatBumber.Controls.Add(this.btn11);
+            this.groupBoxSeatBumber.Controls.Add(this.btn10);
+            this.groupBoxSeatBumber.Controls.Add(this.btn9);
+            this.groupBoxSeatBumber.Controls.Add(this.btn8);
+            this.groupBoxSeatBumber.Controls.Add(this.btn7);
+            this.groupBoxSeatBumber.Controls.Add(this.btn6);
+            this.groupBoxSeatBumber.Controls.Add(this.btn3);
+            this.groupBoxSeatBumber.Controls.Add(this.btn5);
+            this.groupBoxSeatBumber.Controls.Add(this.btn4);
+            this.groupBoxSeatBumber.Location = new System.Drawing.Point(427, 33);
+            this.groupBoxSeatBumber.Name = "groupBoxSeatBumber";
+            this.groupBoxSeatBumber.Size = new System.Drawing.Size(253, 446);
+            this.groupBoxSeatBumber.TabIndex = 6;
+            this.groupBoxSeatBumber.TabStop = false;
+            this.groupBoxSeatBumber.Text = "Otobüs Koltuk Durumu";
+            // 
+            // btn2
+            // 
+            this.btn2.BackColor = System.Drawing.Color.LimeGreen;
+            this.btn2.Location = new System.Drawing.Point(126, 90);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(44, 40);
+            this.btn2.TabIndex = 4;
+            this.btn2.Text = "2";
+            this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn1
             // 
@@ -423,16 +434,6 @@
             this.btn5.UseVisualStyleBackColor = false;
             this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
-            // btn2
-            // 
-            this.btn2.BackColor = System.Drawing.Color.LimeGreen;
-            this.btn2.Location = new System.Drawing.Point(125, 90);
-            this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(45, 40);
-            this.btn2.TabIndex = 0;
-            this.btn2.Text = "2";
-            this.btn2.UseVisualStyleBackColor = false;
-            // 
             // btn4
             // 
             this.btn4.BackColor = System.Drawing.Color.LimeGreen;
@@ -480,7 +481,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1450, 599);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBoxSeatBumber);
             this.Controls.Add(this.groupBoxBusTicket);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "BusTicketApp";
@@ -488,7 +489,7 @@
             this.Load += new System.EventHandler(this.BusTicketApp_Load);
             this.groupBoxBusTicket.ResumeLayout(false);
             this.groupBoxBusTicket.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
+            this.groupBoxSeatBumber.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -507,7 +508,7 @@
         private Label label4;
         private GroupBox groupBoxBusTicket;
         private Button btnBuyAticket;
-        private GroupBox groupBox2;
+        private GroupBox groupBoxSeatBumber;
         private Button button33;
         private Button btn21;
         private Button btn20;
@@ -526,12 +527,12 @@
         private Button btn6;
         private Button btn3;
         private Button btn5;
-        private Button btn2;
         private Button btn4;
         private Button btn12;
         private GroupBox groupBox1;
         private Button btnGetReport;
         private ListBox REPORT;
         private Button btn1;
+        private Button btn2;
     }
 }
