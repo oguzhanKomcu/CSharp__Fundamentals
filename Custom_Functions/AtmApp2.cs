@@ -21,6 +21,44 @@ namespace Custom_Functions
         Dictionary<string,string> usersFullName = new Dictionary<string, string>();
         List<double> usebalance = new List<double>();
 
+
+        bool numbercontrol(string text)
+        {
+
+
+            char[] control = text.ToLower().ToCharArray();
+            bool result = false;
+
+            foreach (char item in text)
+            {
+                switch (item)
+                {
+                    case '1':
+                    case '2':
+                    case '3':
+                    case '4':
+                    case '5':
+                    case '6':
+                    case '7':
+                    case '8':
+                    case '9':
+                    case '0':
+                        result = true;
+                        break;
+
+                    default:
+                        break;
+
+
+                }
+
+            }
+
+            return result;
+
+        }
+
+
         bool SignUpFullName( string firstname, string lastname)
         {
             if (firstname == "" && lastname == "")
@@ -45,14 +83,14 @@ namespace Custom_Functions
             if (userId != "" && userId.Length == 11 )
             {
              
-                if (password != "" && password.Length > 5 )
+                if (password != "" && password.Length > 5 && numbercontrol(password) == true)
                 {
                     users.Add(userId, password);
                     return true;
                 }
                 else
                 {
-                    MessageBox.Show("You entered the wrong password or ID !!");
+                    MessageBox.Show("You entered the wrong password or ID . Your password must have a number .!!");
                     return false;
                 }
 
