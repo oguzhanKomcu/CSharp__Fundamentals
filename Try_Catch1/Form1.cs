@@ -18,7 +18,7 @@ namespace Try_Catch1
                 float penny_account = tl / tafpd;
                 MessageBox.Show($" 1=km PRÝCE :  {Math.Round(penny_account)} TL ");
             }
-            catch (Exception)
+            catch (ArgumentNullException error1)
             {
                 MessageBox.Show("NULL VALUE CANNOT BE ENTERED !!");
 
