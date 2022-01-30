@@ -13,7 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_FoR_CYCLE", "04_FoR_CYCL
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForeacH_Examples", "ForeacH_Examples\ForeacH_Examples.csproj", "{2301E7FF-7AC6-4F93-AF9C-B03F0607DD38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Custom_Functions", "Custom_Functions\Custom_Functions.csproj", "{1EB4DCC6-A4EF-4EB3-93A1-ED51A9306FB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Custom_Functions", "Custom_Functions\Custom_Functions.csproj", "{1EB4DCC6-A4EF-4EB3-93A1-ED51A9306FB3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Void_Methods", "Void_Methods\Void_Methods.csproj", "{40A6F7D3-A1BB-47FA-9BBA-D6B57F1E6F99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Try_CatcH", "Try_CatcH\Try_CatcH.csproj", "{25CEBC03-9090-4B55-9844-67A57E9E3CA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{1EB4DCC6-A4EF-4EB3-93A1-ED51A9306FB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EB4DCC6-A4EF-4EB3-93A1-ED51A9306FB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EB4DCC6-A4EF-4EB3-93A1-ED51A9306FB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40A6F7D3-A1BB-47FA-9BBA-D6B57F1E6F99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40A6F7D3-A1BB-47FA-9BBA-D6B57F1E6F99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40A6F7D3-A1BB-47FA-9BBA-D6B57F1E6F99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40A6F7D3-A1BB-47FA-9BBA-D6B57F1E6F99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25CEBC03-9090-4B55-9844-67A57E9E3CA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25CEBC03-9090-4B55-9844-67A57E9E3CA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25CEBC03-9090-4B55-9844-67A57E9E3CA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25CEBC03-9090-4B55-9844-67A57E9E3CA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

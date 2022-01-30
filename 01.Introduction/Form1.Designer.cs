@@ -47,6 +47,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.btnFcc = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -59,7 +60,6 @@
             this.btnLuc = new System.Windows.Forms.Button();
             this.textGallon = new System.Windows.Forms.TextBox();
             this.textMile = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -254,6 +254,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Fuel consumption calculation";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(83, 113);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(118, 30);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "When using decimal \r\nnumbers, use \",\".";
+            // 
             // btnFcc
             // 
             this.btnFcc.Location = new System.Drawing.Point(233, 120);
@@ -367,16 +377,6 @@
             this.textMile.Name = "textMile";
             this.textMile.Size = new System.Drawing.Size(114, 29);
             this.textMile.TabIndex = 0;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(83, 113);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(118, 30);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "When using decimal \r\nnumbers, use \",\".";
             // 
             // Form1
             // 
