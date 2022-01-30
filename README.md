@@ -37,5 +37,6 @@ Out is used when it returns multiple values.
 My sample bus ticket project[GitHub Pages](https://github.com/oguzhanKomcu/CSharp__Fundamentals/blob/master/VOID_METHODS1/Form1.cs)
 ## TRY - CATCH
 It is a structure that prevents errors in the code blocks we have written. In fact, the prevention of errors is not meant to prevent the error, but to prevent the related program from giving an error to the end user. When the user receives an error, he can directly convey the error to us via e-mail.
+
 My sample bus ticket project[GitHub Pages](https://github.com/oguzhanKomcu/CSharp__Fundamentals/blob/master/Try_Catch1/Form1.cs)
 
