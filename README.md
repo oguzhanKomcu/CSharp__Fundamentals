@@ -25,3 +25,5 @@ You can check this page [GitHub Pages](https://github.com/oguzhanKomcu/CSharp__F
 My sample atm project[GitHub Pages](https://github.com/oguzhanKomcu/CSharp__Fundamentals/blob/master/Custom_Functions/AtmApp2.cs)
 
 My sample dice game project[GitHub Pages](https://github.com/oguzhanKomcu/CSharp__Fundamentals/blob/master/Custom_Functions/DiceGame.cs)
+
+My sample bus ticket project[GitHub Pages](https://github.com/oguzhanKomcu/CSharp__Fundamentals/blob/master/Custom_Functions/BusTicketApp.cs)
