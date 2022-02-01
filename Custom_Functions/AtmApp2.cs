@@ -22,6 +22,19 @@ namespace Custom_Functions
         List<double> usebalance = new List<double>();
 
 
+
+        void GroupboxCLEAR(GroupBox groupBox)
+        {
+            foreach (Control txt in groupBox.Controls)
+            {
+                if (txt is TextBox)  //textboxları silicek
+                {
+                    txt.Text = String.Empty;
+                }
+
+            }
+        }
+
         bool numbercontrol(string text)
         {
 
@@ -100,7 +113,6 @@ namespace Custom_Functions
                 MessageBox.Show("You entered the wrong password or ID !!");
                 return false;
             }
-
         }
        bool Balance()
         {
@@ -108,6 +120,7 @@ namespace Custom_Functions
             double depositmoney1 = Convert.ToDouble(textTransactions.Text);
           
             double balance = 0;
+
 
 
             double totalbalance = depositmoney1 + usebalance[0];
@@ -151,11 +164,17 @@ namespace Custom_Functions
             }
 
 
+            labelfullname.Text = textFirstName.Text + " " + textLastName.Text + "  , "+ "WELCOME";
+
+            GroupboxCLEAR(groupBoxSignUp);
+
+
         }
 
 
         private void AtmApp2_Load(object sender, EventArgs e)
         {
+            usebalance.Add(0);
             groupBoxSignIn.Visible = false;
             groupBoxHomePage.Visible = false;
         }
@@ -200,6 +219,13 @@ namespace Custom_Functions
                 MessageBox.Show("You have entered incorrectly.\n Please try again.");
             }
 
+           
+
+            GroupboxCLEAR(groupBoxSignUp);
+
+
+
+
         }
 
         private void btnCashWithdrawal_Click(object sender, EventArgs e)
@@ -213,6 +239,15 @@ namespace Custom_Functions
                
                 labelBalance.Text = usebalance[0].ToString()+" TL";
                 textTransactions.Clear();
+            }
+            DialogResult atm = MessageBox.Show($"Would you like to return to ATM form?", "Dikkat", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (atm == DialogResult.No)
+            {
+                groupBoxHomePage.Visible=false; 
+                groupBoxSignIn.Visible=false;   
+                groupBoxSignUp.Visible= true;
+                labelBalance.Text = "";
+
             }
             
         

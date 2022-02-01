@@ -63,18 +63,29 @@
             this.btn3 = new System.Windows.Forms.Button();
             this.btn5 = new System.Windows.Forms.Button();
             this.btn4 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnGetReport = new System.Windows.Forms.Button();
-            this.REPORT = new System.Windows.Forms.ListBox();
+            this.grpTicket = new System.Windows.Forms.GroupBox();
+            this.TİCKET = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.grpPayment = new System.Windows.Forms.GroupBox();
+            this.labelAmount = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.btnpayment = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.labelFULLNAME = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.mskCVS = new System.Windows.Forms.MaskedTextBox();
+            this.mskExpareDate = new System.Windows.Forms.MaskedTextBox();
+            this.mskCardNo = new System.Windows.Forms.MaskedTextBox();
             this.groupBoxBusTicket.SuspendLayout();
             this.groupBoxSeatBumber.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.grpTicket.SuspendLayout();
+            this.grpPayment.SuspendLayout();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -161,9 +172,9 @@
             this.groupBoxBusTicket.Controls.Add(this.label2);
             this.groupBoxBusTicket.Controls.Add(this.textseatnumber);
             this.groupBoxBusTicket.Controls.Add(this.label1);
-            this.groupBoxBusTicket.Location = new System.Drawing.Point(45, 33);
+            this.groupBoxBusTicket.Location = new System.Drawing.Point(34, 33);
             this.groupBoxBusTicket.Name = "groupBoxBusTicket";
-            this.groupBoxBusTicket.Size = new System.Drawing.Size(342, 300);
+            this.groupBoxBusTicket.Size = new System.Drawing.Size(392, 262);
             this.groupBoxBusTicket.TabIndex = 5;
             this.groupBoxBusTicket.TabStop = false;
             this.groupBoxBusTicket.Text = "Bus Ticket";
@@ -202,9 +213,9 @@
             this.groupBoxSeatBumber.Controls.Add(this.btn3);
             this.groupBoxSeatBumber.Controls.Add(this.btn5);
             this.groupBoxSeatBumber.Controls.Add(this.btn4);
-            this.groupBoxSeatBumber.Location = new System.Drawing.Point(427, 33);
+            this.groupBoxSeatBumber.Location = new System.Drawing.Point(474, 39);
             this.groupBoxSeatBumber.Name = "groupBoxSeatBumber";
-            this.groupBoxSeatBumber.Size = new System.Drawing.Size(253, 446);
+            this.groupBoxSeatBumber.Size = new System.Drawing.Size(253, 443);
             this.groupBoxSeatBumber.TabIndex = 6;
             this.groupBoxSeatBumber.TabStop = false;
             this.groupBoxSeatBumber.Text = "Seats İn The Bus";
@@ -451,51 +462,40 @@
             this.btn4.UseVisualStyleBackColor = false;
             this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
-            // groupBox1
+            // grpTicket
             // 
-            this.groupBox1.Controls.Add(this.btnGetReport);
-            this.groupBox1.Controls.Add(this.REPORT);
-            this.groupBox1.Location = new System.Drawing.Point(730, 33);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(428, 519);
-            this.groupBox1.TabIndex = 8;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "REPORT";
+            this.grpTicket.Controls.Add(this.TİCKET);
+            this.grpTicket.Location = new System.Drawing.Point(782, 33);
+            this.grpTicket.Name = "grpTicket";
+            this.grpTicket.Size = new System.Drawing.Size(428, 281);
+            this.grpTicket.TabIndex = 8;
+            this.grpTicket.TabStop = false;
+            this.grpTicket.Text = "TİCKET";
             // 
-            // btnGetReport
+            // TİCKET
             // 
-            this.btnGetReport.Location = new System.Drawing.Point(280, 465);
-            this.btnGetReport.Name = "btnGetReport";
-            this.btnGetReport.Size = new System.Drawing.Size(126, 40);
-            this.btnGetReport.TabIndex = 1;
-            this.btnGetReport.Text = "GET REPORT";
-            this.btnGetReport.UseVisualStyleBackColor = true;
-            this.btnGetReport.Click += new System.EventHandler(this.btnGetReport_Click);
-            // 
-            // REPORT
-            // 
-            this.REPORT.FormattingEnabled = true;
-            this.REPORT.ItemHeight = 15;
-            this.REPORT.Location = new System.Drawing.Point(25, 31);
-            this.REPORT.Name = "REPORT";
-            this.REPORT.Size = new System.Drawing.Size(381, 424);
-            this.REPORT.TabIndex = 0;
+            this.TİCKET.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TİCKET.FormattingEnabled = true;
+            this.TİCKET.ItemHeight = 21;
+            this.TİCKET.Location = new System.Drawing.Point(25, 31);
+            this.TİCKET.Name = "TİCKET";
+            this.TİCKET.Size = new System.Drawing.Size(381, 214);
+            this.TİCKET.TabIndex = 0;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.LimeGreen;
-            this.label5.Location = new System.Drawing.Point(427, 494);
+            this.label5.Location = new System.Drawing.Point(477, 496);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 15);
             this.label5.TabIndex = 9;
             this.label5.Text = "           ";
-
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(426, 522);
+            this.label6.Location = new System.Drawing.Point(474, 524);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 15);
             this.label6.TabIndex = 10;
@@ -505,7 +505,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.label7.Location = new System.Drawing.Point(537, 494);
+            this.label7.Location = new System.Drawing.Point(587, 496);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 15);
             this.label7.TabIndex = 9;
@@ -514,7 +514,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(523, 522);
+            this.label8.Location = new System.Drawing.Point(571, 524);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(76, 15);
             this.label8.TabIndex = 10;
@@ -524,7 +524,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(640, 494);
+            this.label9.Location = new System.Drawing.Point(690, 496);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(40, 15);
             this.label9.TabIndex = 9;
@@ -533,24 +533,131 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(640, 522);
+            this.label10.Location = new System.Drawing.Point(701, 524);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(26, 15);
             this.label10.TabIndex = 10;
             this.label10.Text = "Full";
             // 
+            // grpPayment
+            // 
+            this.grpPayment.Controls.Add(this.labelAmount);
+            this.grpPayment.Controls.Add(this.label14);
+            this.grpPayment.Controls.Add(this.btnpayment);
+            this.grpPayment.Controls.Add(this.label13);
+            this.grpPayment.Controls.Add(this.labelFULLNAME);
+            this.grpPayment.Controls.Add(this.label12);
+            this.grpPayment.Controls.Add(this.label11);
+            this.grpPayment.Controls.Add(this.mskCVS);
+            this.grpPayment.Controls.Add(this.mskExpareDate);
+            this.grpPayment.Controls.Add(this.mskCardNo);
+            this.grpPayment.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.grpPayment.Location = new System.Drawing.Point(34, 323);
+            this.grpPayment.Name = "grpPayment";
+            this.grpPayment.Size = new System.Drawing.Size(392, 248);
+            this.grpPayment.TabIndex = 11;
+            this.grpPayment.TabStop = false;
+            this.grpPayment.Text = "PAYMENT";
+            // 
+            // labelAmount
+            // 
+            this.labelAmount.AutoSize = true;
+            this.labelAmount.Location = new System.Drawing.Point(147, 62);
+            this.labelAmount.Name = "labelAmount";
+            this.labelAmount.Size = new System.Drawing.Size(0, 21);
+            this.labelAmount.TabIndex = 4;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(54, 62);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(84, 21);
+            this.label14.TabIndex = 4;
+            this.label14.Text = "AMOUNT :";
+            // 
+            // btnpayment
+            // 
+            this.btnpayment.Location = new System.Drawing.Point(225, 184);
+            this.btnpayment.Name = "btnpayment";
+            this.btnpayment.Size = new System.Drawing.Size(151, 45);
+            this.btnpayment.TabIndex = 3;
+            this.btnpayment.Text = "PAYMENT";
+            this.btnpayment.UseVisualStyleBackColor = true;
+            this.btnpayment.Click += new System.EventHandler(this.btnpayment_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(261, 141);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(46, 21);
+            this.label13.TabIndex = 2;
+            this.label13.Text = "CVS :";
+            // 
+            // labelFULLNAME
+            // 
+            this.labelFULLNAME.AutoSize = true;
+            this.labelFULLNAME.Location = new System.Drawing.Point(147, 16);
+            this.labelFULLNAME.Name = "labelFULLNAME";
+            this.labelFULLNAME.Size = new System.Drawing.Size(0, 21);
+            this.labelFULLNAME.TabIndex = 2;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(31, 138);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(110, 21);
+            this.label12.TabIndex = 2;
+            this.label12.Text = "EXPARE DATE :";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(15, 92);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(126, 21);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "CARD NUMBER :";
+            // 
+            // mskCVS
+            // 
+            this.mskCVS.Location = new System.Drawing.Point(313, 135);
+            this.mskCVS.Mask = "000";
+            this.mskCVS.Name = "mskCVS";
+            this.mskCVS.Size = new System.Drawing.Size(63, 29);
+            this.mskCVS.TabIndex = 1;
+            // 
+            // mskExpareDate
+            // 
+            this.mskExpareDate.Location = new System.Drawing.Point(147, 133);
+            this.mskExpareDate.Mask = "00/00";
+            this.mskExpareDate.Name = "mskExpareDate";
+            this.mskExpareDate.Size = new System.Drawing.Size(75, 29);
+            this.mskExpareDate.TabIndex = 1;
+            // 
+            // mskCardNo
+            // 
+            this.mskCardNo.Location = new System.Drawing.Point(147, 89);
+            this.mskCardNo.Mask = "0000/0000/0000/0000";
+            this.mskCardNo.Name = "mskCardNo";
+            this.mskCardNo.Size = new System.Drawing.Size(229, 29);
+            this.mskCardNo.TabIndex = 0;
+            // 
             // BusTicketApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1450, 599);
+            this.ClientSize = new System.Drawing.Size(1261, 599);
+            this.Controls.Add(this.grpPayment);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grpTicket);
             this.Controls.Add(this.groupBoxSeatBumber);
             this.Controls.Add(this.groupBoxBusTicket);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -560,7 +667,9 @@
             this.groupBoxBusTicket.ResumeLayout(false);
             this.groupBoxBusTicket.PerformLayout();
             this.groupBoxSeatBumber.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
+            this.grpTicket.ResumeLayout(false);
+            this.grpPayment.ResumeLayout(false);
+            this.grpPayment.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -600,9 +709,8 @@
         private Button btn5;
         private Button btn4;
         private Button btn12;
-        private GroupBox groupBox1;
-        private Button btnGetReport;
-        private ListBox REPORT;
+        private GroupBox grpTicket;
+        private ListBox TİCKET;
         private Button btn1;
         private Button btn2;
         private Label label5;
@@ -611,5 +719,16 @@
         private Label label8;
         private Label label9;
         private Label label10;
+        private GroupBox grpPayment;
+        private Label label11;
+        private MaskedTextBox mskCVS;
+        private MaskedTextBox mskExpareDate;
+        private MaskedTextBox mskCardNo;
+        private Label label13;
+        private Label labelFULLNAME;
+        private Label label12;
+        private Button btnpayment;
+        private Label labelAmount;
+        private Label label14;
     }
 }

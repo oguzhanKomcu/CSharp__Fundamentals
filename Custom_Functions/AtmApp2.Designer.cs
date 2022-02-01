@@ -39,9 +39,10 @@
             this.textLastName = new System.Windows.Forms.TextBox();
             this.textFirstName = new System.Windows.Forms.TextBox();
             this.groupBoxHomePage = new System.Windows.Forms.GroupBox();
+            this.labelfullname = new System.Windows.Forms.Label();
             this.labelBalance = new System.Windows.Forms.Label();
             this.textTransactions = new System.Windows.Forms.TextBox();
-            this.labelHomePageFullName = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btnCashWithdrawal = new System.Windows.Forms.Button();
             this.btnDeposit = new System.Windows.Forms.Button();
@@ -51,7 +52,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textSignİnPassword = new System.Windows.Forms.TextBox();
             this.textSignİnUserID = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.groupBoxSignUp.SuspendLayout();
             this.groupBoxHomePage.SuspendLayout();
             this.groupBoxSignIn.SuspendLayout();
@@ -158,9 +158,9 @@
             // 
             // groupBoxHomePage
             // 
+            this.groupBoxHomePage.Controls.Add(this.labelfullname);
             this.groupBoxHomePage.Controls.Add(this.labelBalance);
             this.groupBoxHomePage.Controls.Add(this.textTransactions);
-            this.groupBoxHomePage.Controls.Add(this.labelHomePageFullName);
             this.groupBoxHomePage.Controls.Add(this.label8);
             this.groupBoxHomePage.Controls.Add(this.label7);
             this.groupBoxHomePage.Controls.Add(this.btnCashWithdrawal);
@@ -168,40 +168,50 @@
             this.groupBoxHomePage.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBoxHomePage.Location = new System.Drawing.Point(671, 26);
             this.groupBoxHomePage.Name = "groupBoxHomePage";
-            this.groupBoxHomePage.Size = new System.Drawing.Size(312, 262);
+            this.groupBoxHomePage.Size = new System.Drawing.Size(312, 284);
             this.groupBoxHomePage.TabIndex = 4;
             this.groupBoxHomePage.TabStop = false;
             this.groupBoxHomePage.Text = "Home Page";
+            // 
+            // labelfullname
+            // 
+            this.labelfullname.AutoSize = true;
+            this.labelfullname.Location = new System.Drawing.Point(58, 33);
+            this.labelfullname.Name = "labelfullname";
+            this.labelfullname.Size = new System.Drawing.Size(0, 20);
+            this.labelfullname.TabIndex = 6;
             // 
             // labelBalance
             // 
             this.labelBalance.AutoSize = true;
             this.labelBalance.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelBalance.Location = new System.Drawing.Point(165, 59);
+            this.labelBalance.Location = new System.Drawing.Point(163, 81);
             this.labelBalance.Name = "labelBalance";
             this.labelBalance.Size = new System.Drawing.Size(0, 30);
             this.labelBalance.TabIndex = 5;
             // 
             // textTransactions
             // 
-            this.textTransactions.Location = new System.Drawing.Point(153, 111);
+            this.textTransactions.Location = new System.Drawing.Point(151, 133);
             this.textTransactions.Name = "textTransactions";
             this.textTransactions.Size = new System.Drawing.Size(131, 27);
             this.textTransactions.TabIndex = 4;
             // 
-            // labelHomePageFullName
+            // label8
             // 
-            this.labelHomePageFullName.AutoSize = true;
-            this.labelHomePageFullName.Location = new System.Drawing.Point(24, 36);
-            this.labelHomePageFullName.Name = "labelHomePageFullName";
-            this.labelHomePageFullName.Size = new System.Drawing.Size(0, 20);
-            this.labelHomePageFullName.TabIndex = 3;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(34, 130);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(111, 30);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "PROCESS :";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(51, 56);
+            this.label7.Location = new System.Drawing.Point(49, 78);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(96, 30);
             this.label7.TabIndex = 1;
@@ -209,7 +219,7 @@
             // 
             // btnCashWithdrawal
             // 
-            this.btnCashWithdrawal.Location = new System.Drawing.Point(65, 165);
+            this.btnCashWithdrawal.Location = new System.Drawing.Point(63, 187);
             this.btnCashWithdrawal.Name = "btnCashWithdrawal";
             this.btnCashWithdrawal.Size = new System.Drawing.Size(100, 60);
             this.btnCashWithdrawal.TabIndex = 0;
@@ -219,7 +229,7 @@
             // 
             // btnDeposit
             // 
-            this.btnDeposit.Location = new System.Drawing.Point(188, 165);
+            this.btnDeposit.Location = new System.Drawing.Point(186, 187);
             this.btnDeposit.Name = "btnDeposit";
             this.btnDeposit.Size = new System.Drawing.Size(96, 60);
             this.btnDeposit.TabIndex = 0;
@@ -276,6 +286,7 @@
             // 
             this.textSignİnPassword.Location = new System.Drawing.Point(123, 70);
             this.textSignİnPassword.Name = "textSignİnPassword";
+            this.textSignİnPassword.PasswordChar = '*';
             this.textSignİnPassword.Size = new System.Drawing.Size(122, 27);
             this.textSignİnPassword.TabIndex = 0;
             // 
@@ -285,16 +296,6 @@
             this.textSignİnUserID.Name = "textSignİnUserID";
             this.textSignİnUserID.Size = new System.Drawing.Size(122, 27);
             this.textSignİnUserID.TabIndex = 0;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(36, 108);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(111, 30);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "PROCESS :";
             // 
             // AtmApp2
             // 
@@ -339,9 +340,9 @@
         private Label label5;
         private TextBox textSignİnPassword;
         private TextBox textSignİnUserID;
-        private Label labelHomePageFullName;
         private Label labelBalance;
         private TextBox textTransactions;
         private Label label8;
+        private Label labelfullname;
     }
 }
