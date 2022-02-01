@@ -27,3 +27,16 @@ My sample atm project[GitHub Pages](https://github.com/oguzhanKomcu/CSharp__Fund
 My sample dice game project[GitHub Pages](https://github.com/oguzhanKomcu/CSharp__Fundamentals/blob/master/Custom_Functions/DiceGame.cs)
 
 My sample bus ticket project[GitHub Pages](https://github.com/oguzhanKomcu/CSharp__Fundamentals/blob/master/Custom_Functions/BusTicketApp.cs)
+
+## VOİDS METHODS
+Methods defined as void do not return a value. It is one of the most frequently used methods by developers. The void method takes parameters like any other method. It is used when there is no need to take a value.
+### OVERLOAD
+We can create more than one method with the same name, but we cannot process the same parameters to overloaded methods.
+### OUT
+Out is used when it returns multiple values.
+My sample bus ticket project[GitHub Pages](https://github.com/oguzhanKomcu/CSharp__Fundamentals/blob/master/VOID_METHODS1/Form1.cs)
+## TRY - CATCH
+It is a structure that prevents errors in the code blocks we have written. In fact, the prevention of errors is not meant to prevent the error, but to prevent the related program from giving an error to the end user. When the user receives an error, he can directly convey the error to us via e-mail.
+
+My sample bus ticket project[GitHub Pages](https://github.com/oguzhanKomcu/CSharp__Fundamentals/blob/master/Try_Catch1/Form1.cs)
+

@@ -7,7 +7,7 @@ namespace VOID_METHODS1
             InitializeComponent();
         }
 
-        //VOÝD METHODS
+        //VOID METHODS
 
         void SpeedFormula(int path, int time)
         {
@@ -15,7 +15,7 @@ namespace VOID_METHODS1
             MessageBox.Show($"Your Speed : {speed} km/s");
         }
 
-
+        //CONTROLA
         private void btnCalculate1_Click(object sender, EventArgs e)
         {
             SpeedFormula(int.Parse(textPath.Text), int.Parse(textTime.Text));
