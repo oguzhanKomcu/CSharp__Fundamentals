@@ -79,7 +79,7 @@ namespace Dice_Game_Project
                     else if (total > 6)
                     {
                         labelResault.Text = $"{numbers1[0]} - {numbers2[0]} ";
-                        MessageBox.Show("YOU WÝNN !!!");
+                        MessageBox.Show("YOU WINN !!!");
                         labelBalance.Text = "";
                         newbalance2();
                         labelBalance.Text = user1balance1[0].ToString();
