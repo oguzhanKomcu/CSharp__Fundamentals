@@ -1,18 +1,8 @@
-ï»¿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace Custom_Functions
+namespace Bus_Ticket_Project
 {
-    public partial class BusTicketApp : Form
+    public partial class BusTicketProject : Form
     {
-        public BusTicketApp()
+        public BusTicketProject()
         {
             InitializeComponent();
         }
@@ -255,24 +245,24 @@ namespace Custom_Functions
 
 
         List<string> users = new List<string>();
-        List<int> totalprice = new List<int>(); 
+        List<int> totalprice = new List<int>();
         private void btnBuyAticket_Click(object sender, EventArgs e)
         {
 
 
             string firstname = textFirstName.Text;
-            string lastname = textLastName.Text;    
-            string Ä±d = textId.Text;
+            string lastname = textLastName.Text;
+            string ýd = textId.Text;
             int seatnumber = Convert.ToInt32(textseatnumber.Text);
 
-           
 
-            string fullname = firstname +" "+ lastname + "   " + Ä±d + "    " + textseatnumber.Text;
+
+            string fullname = firstname + " " + lastname + "   " + ýd + "    " + textseatnumber.Text;
 
             for (int i = 0; i < 1; i++)
-            { 
-               
-                users.Add(fullname); 
+            {
+
+                users.Add(fullname);
 
             }
 
@@ -284,13 +274,13 @@ namespace Custom_Functions
             labelAmount.Text = totalprice[0].ToString();
 
 
-           
+
 
             //Here, after choosing the first chief seat number, I changed the seat color from white to red after the ticket was purchased.
             seatstate(seatnumber);
-            
 
-        }   
+
+        }
 
 
         private void btn2_Click(object sender, EventArgs e)
@@ -310,7 +300,7 @@ namespace Custom_Functions
             {
                 MessageBox.Show("Please enter your information completely.!");
             }
-            else if (mskCardNo.Text.Length < 19 || mskCVS.Text.Length < 3 || mskExpareDate.Text.Length < 5) 
+            else if (mskCardNo.Text.Length < 19 || mskCVS.Text.Length < 3 || mskExpareDate.Text.Length < 5)
             {
                 MessageBox.Show("Please enter your information completely..!");
             }
@@ -325,23 +315,23 @@ namespace Custom_Functions
 
                     //I showed the passenger report on the bus and the total amount of tickets sold. 
 
-                    TÄ°CKET.Items.Add("FULL NAME                ID                   SEAT NUMBER     ");
+                    TÝCKET.Items.Add("FULL NAME                ID                   SEAT NUMBER     ");
                     foreach (string user1 in users)
                     {
 
-                        TÄ°CKET.Items.Add(user1);
-                        TÄ°CKET.Items.Add("Bus Departure Time: 09:00 Bus Platform: 15");
-                        TÄ°CKET.Items.Add("We wish you a pleasant journey..");
-                        TÄ°CKET.Items.Add("THEREC TRUZÄ°M");
+                        TÝCKET.Items.Add(user1);
+                        TÝCKET.Items.Add("Bus Departure Time: 09:00 Bus Platform: 15");
+                        TÝCKET.Items.Add("We wish you a pleasant journey..");
+                        TÝCKET.Items.Add("THEREC TRUZÝM");
                     }
-                    TÄ°CKET.Items.Add($"TOTAL AMOUNT: {totalprice[0]} TL ");
-                    grpTicket.Visible = true;   
+                    TÝCKET.Items.Add($"TOTAL AMOUNT: {totalprice[0]} TL ");
+                    grpTicket.Visible = true;
 
                 }
                 else
                 {
                     MessageBox.Show("YOUR PROCESS IS DONE.!");
-                   
+
                 }
             }
         }

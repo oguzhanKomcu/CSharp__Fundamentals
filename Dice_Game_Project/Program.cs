@@ -1,4 +1,4 @@
-namespace Custom_Functions
+namespace Dice_Game_Project
 {
     internal static class Program
     {

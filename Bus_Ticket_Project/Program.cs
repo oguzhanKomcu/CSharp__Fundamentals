@@ -1,4 +1,4 @@
-namespace Custom_Functions
+namespace Bus_Ticket_Project
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace Custom_Functions
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new DiceGame());
+            Application.Run(new BusTicketProject());
         }
     }
 }

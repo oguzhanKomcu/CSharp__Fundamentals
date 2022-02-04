@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace Custom_Functions
+namespace Dice_Game_Project
 {
     public partial class DiceGame : Form
     {
@@ -39,7 +29,8 @@ namespace Custom_Functions
         bool newbalance2()
         {
             int BetAmount = Convert.ToInt32(textBetAmount.Text);
-            int totalbalance = user1balance1[0] + BetAmount;
+            user1balance1[0] = user1balance1[0] - BetAmount;
+            int totalbalance = user1balance1[0] + (BetAmount * 2);
             user1balance1[0] = totalbalance;
             return true;
         }
@@ -68,14 +59,14 @@ namespace Custom_Functions
             }
 
 
-            int toplam = numbers1[0] + numbers2[0];
+            int total = numbers1[0] + numbers2[0];
 
             if (textBetAmount.Text != "")
             {
 
-                if (int.Parse(textBetAmount.Text) < user1balance1[0])
+                if (int.Parse(textBetAmount.Text) <= user1balance1[0])
                 {
-                    if (toplam <= 6)
+                    if (total <= 6)
                     {
                         labelResault.Text = $"{numbers1[0]} - {numbers2[0]} ";
 
@@ -85,10 +76,10 @@ namespace Custom_Functions
                         textBetAmount.Clear();
 
                     }
-                    else if (toplam > 6)
+                    else if (total > 6)
                     {
                         labelResault.Text = $"{numbers1[0]} - {numbers2[0]} ";
-                        MessageBox.Show("YOU WİNN !!!");
+                        MessageBox.Show("YOU W�NN !!!");
                         labelBalance.Text = "";
                         newbalance2();
                         labelBalance.Text = user1balance1[0].ToString();
@@ -109,6 +100,12 @@ namespace Custom_Functions
             {
                 MessageBox.Show("You have not entered the bet amount..!!!");
             }
+
+            if (labelBalance.Text == "0")
+            {
+                MessageBox.Show("Your balance is over !\n You need to restart the game !");
+            }
+
         }
 
         private void DiceGame_Load(object sender, EventArgs e)

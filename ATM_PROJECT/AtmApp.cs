@@ -1,24 +1,15 @@
-ï»¿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace Custom_Functions
+namespace ATM_PROJECT
 {
-    public partial class AtmApp2 : Form
+    public partial class Atm_App : Form
     {
-        public AtmApp2()
+        public Atm_App()
         {
             InitializeComponent();
         }
 
+
         Dictionary<string, string> users = new Dictionary<string, string>();
-        Dictionary<string,string> usersFullName = new Dictionary<string, string>();
+        Dictionary<string, string> usersFullName = new Dictionary<string, string>();
         List<double> usebalance = new List<double>();
 
 
@@ -27,7 +18,7 @@ namespace Custom_Functions
         {
             foreach (Control txt in groupBox.Controls)
             {
-                if (txt is TextBox)  //textboxlarÄ± silicek
+                if (txt is TextBox)  //textboxlarý silicek
                 {
                     txt.Text = String.Empty;
                 }
@@ -72,7 +63,7 @@ namespace Custom_Functions
         }
 
 
-        bool SignUpFullName( string firstname, string lastname)
+        bool SignUpFullName(string firstname, string lastname)
         {
             if (firstname == "" && lastname == "")
             {
@@ -93,9 +84,9 @@ namespace Custom_Functions
         bool SignUp(string userId, string password)
         {
 
-            if (userId != "" && userId.Length == 11 )
+            if (userId != "" && userId.Length == 11)
             {
-             
+
                 if (password != "" && password.Length > 5 && numbercontrol(password) == true)
                 {
                     users.Add(userId, password);
@@ -114,11 +105,11 @@ namespace Custom_Functions
                 return false;
             }
         }
-       bool Balance()
+        bool Balance()
         {
-       
+
             double depositmoney1 = Convert.ToDouble(textTransactions.Text);
-          
+
             double balance = 0;
 
 
@@ -128,7 +119,7 @@ namespace Custom_Functions
             return true;
 
         }
-       bool NewBalance()
+        bool NewBalance()
         {
             double depositmoney1 = Convert.ToDouble(textTransactions.Text);
 
@@ -164,7 +155,7 @@ namespace Custom_Functions
             }
 
 
-            labelfullname.Text = textFirstName.Text + " " + textLastName.Text + "  , "+ "WELCOME";
+            labelfullname.Text = textFirstName.Text + " " + textLastName.Text + "  , " + "WELCOME";
 
             GroupboxCLEAR(groupBoxSignUp);
 
@@ -179,25 +170,25 @@ namespace Custom_Functions
             groupBoxHomePage.Visible = false;
         }
 
-        private void btnSignÄ°n_Click(object sender, EventArgs e)
+        private void btnSignÝn_Click(object sender, EventArgs e)
         {
             bool resault1 = false;
-            bool resault2 = false;  
-            
+            bool resault2 = false;
+
             foreach (string userId in users.Keys)
             {
-                if(userId == textSignÄ°nUserID.Text)
+                if (userId == textSignÝnUserID.Text)
                 {
                     resault1 = true;
                     foreach (string password in users.Values)
                     {
-                        if (password == textSignÄ°nPassword.Text)
+                        if (password == textSignÝnPassword.Text)
                         {
                             resault2 = true;
                         }
 
                     }
-                    if(resault2 == false)
+                    if (resault2 == false)
                     {
                         MessageBox.Show("You have entered incorrectly.");
 
@@ -208,18 +199,18 @@ namespace Custom_Functions
                         MessageBox.Show("Login successful.\nWELCOME ! ");
                         groupBoxSignIn.Visible = false;
                         groupBoxHomePage.Visible = true;
-                        
+
                         break;
                     }
                 }
 
             }
-            if(resault1 == false)
+            if (resault1 == false)
             {
                 MessageBox.Show("You have entered incorrectly.\n Please try again.");
             }
 
-           
+
 
             GroupboxCLEAR(groupBoxSignUp);
 
@@ -230,38 +221,39 @@ namespace Custom_Functions
 
         private void btnCashWithdrawal_Click(object sender, EventArgs e)
         {
-            
+
             if (Convert.ToDouble(textTransactions.Text) < usebalance[0])
             {
                 NewBalance();
                 MessageBox.Show($"Your withdrawal has been successfully completed.\nTotal Balance = {usebalance[0]}");
                 labelBalance.Text = "";
-               
-                labelBalance.Text = usebalance[0].ToString()+" TL";
+
+                labelBalance.Text = usebalance[0].ToString() + " TL";
                 textTransactions.Clear();
             }
             DialogResult atm = MessageBox.Show($"Would you like to return to ATM form?", "Dikkat", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (atm == DialogResult.No)
             {
-                groupBoxHomePage.Visible=false; 
-                groupBoxSignIn.Visible=false;   
-                groupBoxSignUp.Visible= true;
+                groupBoxHomePage.Visible = false;
+                groupBoxSignIn.Visible = false;
+                groupBoxSignUp.Visible = true;
                 labelBalance.Text = "";
 
             }
-            
-        
+
+
 
         }
 
         private void btnDeposit_Click(object sender, EventArgs e)
         {
             Balance();
-                labelBalance.Text = usebalance[0].ToString()+" TL";
-                MessageBox.Show("Your transaction has been completed successfully.");
-                textTransactions.Clear();
-
+            labelBalance.Text = usebalance[0].ToString() + " TL";
+            MessageBox.Show("Your transaction has been completed successfully.");
+            textTransactions.Clear();
 
         }
-    }
+
+
+    }               
 }
