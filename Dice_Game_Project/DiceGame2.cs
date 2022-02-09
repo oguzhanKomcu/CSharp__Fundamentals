@@ -1,8 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
 namespace Dice_Game_Project
 {
-    public partial class DiceGame : Form
+    public partial class DiceGame2 : Form
     {
-        public DiceGame()
+        public DiceGame2()
         {
             InitializeComponent();
         }
@@ -12,7 +22,9 @@ namespace Dice_Game_Project
 
         bool user1balance()
         {
+
             user1balance1.Add(1000);
+            labelBalance.Text = user1balance1[0].ToString();
 
             return true;
         }
@@ -29,11 +41,11 @@ namespace Dice_Game_Project
         bool newbalance2()
         {
             int BetAmount = Convert.ToInt32(textBetAmount.Text);
-            user1balance1[0] = user1balance1[0] - BetAmount;
             int totalbalance = user1balance1[0] + (BetAmount * 2);
             user1balance1[0] = totalbalance;
             return true;
         }
+
 
         private void btnBarbut2_Click(object sender, EventArgs e)
         {
@@ -61,12 +73,14 @@ namespace Dice_Game_Project
 
             int total = numbers1[0] + numbers2[0];
 
+
             if (textBetAmount.Text != "")
             {
 
+
                 if (int.Parse(textBetAmount.Text) <= user1balance1[0])
                 {
-                    if (total <= 6)
+                    if (total <= 5)
                     {
                         labelResault.Text = $"{numbers1[0]} - {numbers2[0]} ";
 
@@ -76,7 +90,16 @@ namespace Dice_Game_Project
                         textBetAmount.Clear();
 
                     }
-                    else if (total > 6)
+                    else if (total == 5 || total == 6)
+                    {
+
+                        MessageBox.Show("Draw. Your money has been refunded.!!");
+                        labelResault.Text = $"{numbers1[0]} - {numbers2[0]} ";
+                        labelBalance.Text = user1balance1[0].ToString();
+                        textBetAmount.Clear();
+
+                    }
+                    else if (total > 7)
                     {
                         labelResault.Text = $"{numbers1[0]} - {numbers2[0]} ";
                         MessageBox.Show("YOU WINN !!!");
@@ -104,14 +127,22 @@ namespace Dice_Game_Project
             if (labelBalance.Text == "0")
             {
                 MessageBox.Show("Your balance is over !\n You need to restart the game !");
+                this.Hide();
             }
 
         }
 
-        private void DiceGame_Load(object sender, EventArgs e)
+
+
+
+        private void DiceGame2_Load(object sender, EventArgs e)
         {
             user1balance();
-            labelBalance.Text = user1balance1[0].ToString();
+        }
+
+        private void DiceGame2_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

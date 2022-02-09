@@ -1,14 +1,14 @@
 ﻿namespace Dice_Game_Project
 {
-    partial class DiceGame
+    partial class DiceGame2
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,8 +23,8 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -48,17 +48,17 @@
             this.groupBox1.Controls.Add(this.labelResault);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(54, 32);
+            this.groupBox1.Location = new System.Drawing.Point(40, 35);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(287, 267);
-            this.groupBox1.TabIndex = 4;
+            this.groupBox1.Size = new System.Drawing.Size(319, 297);
+            this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DİCE GAME ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 150);
+            this.label3.Location = new System.Drawing.Point(17, 159);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 15);
             this.label3.TabIndex = 3;
@@ -66,10 +66,10 @@
             // 
             // btnBarbut2
             // 
-            this.btnBarbut2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBarbut2.Location = new System.Drawing.Point(130, 185);
+            this.btnBarbut2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBarbut2.Location = new System.Drawing.Point(130, 197);
             this.btnBarbut2.Name = "btnBarbut2";
-            this.btnBarbut2.Size = new System.Drawing.Size(131, 57);
+            this.btnBarbut2.Size = new System.Drawing.Size(129, 40);
             this.btnBarbut2.TabIndex = 0;
             this.btnBarbut2.Text = "Roll The Dice";
             this.btnBarbut2.UseVisualStyleBackColor = true;
@@ -86,9 +86,9 @@
             // 
             // textBetAmount
             // 
-            this.textBetAmount.Location = new System.Drawing.Point(130, 146);
+            this.textBetAmount.Location = new System.Drawing.Point(130, 156);
             this.textBetAmount.Name = "textBetAmount";
-            this.textBetAmount.Size = new System.Drawing.Size(131, 23);
+            this.textBetAmount.Size = new System.Drawing.Size(129, 23);
             this.textBetAmount.TabIndex = 1;
             // 
             // labelResault
@@ -120,14 +120,16 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "RESAULT :";
             // 
-            // Form1
+            // DiceGame2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(440, 378);
+            this.ClientSize = new System.Drawing.Size(457, 384);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "DiceGame2";
+            this.Text = "DiceGame2";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DiceGame2_FormClosing);
+            this.Load += new System.EventHandler(this.DiceGame2_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
