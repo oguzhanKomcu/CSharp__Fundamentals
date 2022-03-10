@@ -1,5 +1,7 @@
 # CSharp__Fundamentals
 
+<img src="https://miro.medium.com/max/1400/1*uhSX5djhrWiguXoWsW_lEw.png" width="600" height="270">
+
 ## C# INTROCTION
 I made 3 desktop applications with C# first start topics.
 
